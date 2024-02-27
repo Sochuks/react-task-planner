@@ -6,7 +6,7 @@ const Header = () => {
 
     <header className='flex justify-between items-center mb-8'>
         <h1>Task Planner</h1>
-        < Button />
+        < Button text = 'Add'/>
     </header>
     
   )
