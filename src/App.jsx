@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-
+import Header from './components/Header'
 
 function App() {
   return (
    
       <div className="container">
 
-        <h1 className='text-center text-blue-400'>Welcome to React App</h1>
+        <Header />
 
       </div>
 
