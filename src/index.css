@@ -30,6 +30,12 @@
   margin: 0 auto;
 }
 
+.container-inner{
+  max-width: 500px;
+  min-height: 300px;
+  overflow: auto;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
