@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import Header from './components/Header'
 import Tasks from './components/Tasks'
+import AddTask from './components/AddTask'
 
 function App() {
   const [tasks, setTasks] = useState ([
@@ -39,6 +40,7 @@ function App() {
    
       <div className="container-inner my-8 mx-auto p-8 rounded-sm border-2 border-teal-300">
         <Header />
+        <AddTask />
         {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
         : 'No Task To Show '}
 
