@@ -19,7 +19,7 @@ const AddTask = ({onAdd}) => {
         onAdd({text, day, reminder})
         setText('')
         setDay('')
-        setReminder('')
+        setReminder(false)
 
     }
   return (
@@ -40,7 +40,7 @@ const AddTask = ({onAdd}) => {
         <div className="form-control flex items-center justify-between">
             <label className="flex-1">Set Reminder</label>
             <input type="checkbox" className="flex-2 h-5" value={reminder} 
-            onChange={(e)=> setReminder(e.currentTarget.checked)}/>
+            onChange={(e)=> setReminder(e.currentTarget.checked)} checked={reminder}/>
         </div>
 
         <input className="w-full mx-auto btn mt-5" type="submit" value="Save Task" />
