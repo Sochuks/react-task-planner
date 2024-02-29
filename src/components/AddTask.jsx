@@ -1,4 +1,11 @@
+import { useState } from "react"
+
 const AddTask = () => {
+
+    //Create state for form elements
+    const [text, setText] = useState('')
+    const [day, setDay] = useState('')
+    const [reminder, setReminder] = useState('')
   return (
     // Add Task Form 
     <form className="mb-10">
