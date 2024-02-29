@@ -36,11 +36,16 @@ function App() {
   setTasks(tasks.map((task) => task.id === id ? {...task, reminder : !task.reminder} : task ) )
   }
 
+    //Add Task from form
+  const addTask = (task) => {
+    console.log(task)
+  }
+
   return (
    
       <div className="container-inner my-8 mx-auto p-8 rounded-sm border-2 border-teal-300">
         <Header />
-        <AddTask />
+        <AddTask onAdd = {addTask} />
         {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
         : 'No Task To Show '}
 
