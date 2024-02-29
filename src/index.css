@@ -67,15 +67,42 @@ h1 {
   font-weight: 400;
   font-family: inherit;
   color: #fff;
+  background-color: aquamarine;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 .btn:hover {
   border-color: #646cff;
+  background-color: cadetblue;
+  color: aliceblue;
 }
 .btn:focus,
 .btn:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.btn:active{
+  transform: scale(0.98);
+}
+
+.form-control{
+  margin: 20px 10px;
+}
+
+.form-control label{
+  display: block;
+}
+
+.form-control input{
+  width: 100%;
+  padding: 3px 7px;
+  font-size: 17px;
+  border: 1px solid #24242444;
+  border-radius: 5px;
+}
+
+.form-control checkbox{
+
 }
 
 @media (prefers-color-scheme: light) {
