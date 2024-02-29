@@ -27,8 +27,8 @@ function App() {
   return (
    
       <div className="container-inner my-8 mx-auto p-8 rounded-sm border-2 border-teal-300">
-
         <Header />
+        <Tasks tasks={tasks} />
 
       </div>
 
