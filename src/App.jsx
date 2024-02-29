@@ -38,7 +38,7 @@ function App() {
 
     //Add Task from form
   const addTask = (task) => {
-    console.log(task)
+    
   }
 
   return (
