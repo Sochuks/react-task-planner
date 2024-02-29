@@ -31,8 +31,8 @@ function App() {
   }
 
     // Reminder task event
-  const toggleReminder = () =>{
-    console.log(id)
+  const toggleReminder = (id) =>{
+    
   }
 
   return (
