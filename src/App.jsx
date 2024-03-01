@@ -38,9 +38,9 @@ function App() {
 
     //Add Task from form
   const addTask = (task) => {
-    const id = Math.floor(Math.random() * 10000 + 1) 
-    const newTask = {id, ...tasks}
-    setTasks = ([...tasks, newTask])
+    const id = Math.floor(Math.random() * 10000)  + 1 
+    const newTask = {id, ...task}
+    setTasks([...tasks, newTask])
   }
 
   return (

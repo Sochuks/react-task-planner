@@ -14,9 +14,11 @@ const AddTask = ({onAdd}) => {
 
         if(!text){
             alert('Please Add a task')
+            return
         }
 
         onAdd({text, day, reminder})
+        
         setText('')
         setDay('')
         setReminder(false)
