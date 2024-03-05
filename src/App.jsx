@@ -53,7 +53,7 @@ function App() {
    
       <div className="container-inner my-8 mx-auto p-8 rounded-sm border-2 border-teal-300">
         
-        <Header showTaskForm={toggleForm} />
+        <Header showTaskForm={toggleForm} showAdd={showTaskForm} />
 
         {showTaskForm && <AddTask onAdd = {addTask} />}
         
