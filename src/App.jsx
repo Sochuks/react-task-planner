@@ -101,6 +101,8 @@ function App() {
         {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
         : 'No Task To Show '}
 
+        <About path='/about' component='{About}' />
+        
         <Footer />
 
       </div>
