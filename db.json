@@ -11,6 +11,12 @@
       "text": "Lekki Toll-gate",
       "day": "Oct 20th at 7am",
       "reminder": true
+    },
+    {
+      "id": "027c",
+      "text": "Osama the Bomber",
+      "day": "July 28th at 6:00pm",
+      "reminder": true
     }
   ]
 }

@@ -50,12 +50,12 @@ function App() {
     const res = await fetch('http://localhost:8000/tasks', {
       method: 'POST',
       headers: {
-        'cotent-type': 'apllication/json'
+        'Content-type': 'apllication/json',
       },
       body: JSON.stringify(task),
     })
 
-    const data = await res.json
+    const data = await res.json()
 
     setTasks([...tasks, data])
 
