@@ -28,6 +28,14 @@ function App() {
     return (data)
   }
 
+  // Fetch Task
+    const fetchTask = async () =>{
+      const res = await fetch(`http://localhost:8000/tasks/${id}`)
+      const data = await res.json()
+
+    return (data)
+    }
+
     // Delete task event
   const deleteTask = async (id) => {
     await fetch(`http://localhost:8000/tasks/${id}`, {
