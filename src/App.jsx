@@ -11,9 +11,16 @@ function App() {
   // useEffect to fetch Data from db.json
     useEffect(() =>{
 
-        fetchTask()
+        fetchTasks()
     }, [])
 
+  // fetch Tasks
+  const fetchTasks = async () =>{
+    const res = await fetch('http://localhost:8000/tasks')
+    const data = await res.json()
+
+    console.log(data)
+  }
 
     // Delete task event
   const deleteTask = (id) => {
