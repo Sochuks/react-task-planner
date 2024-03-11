@@ -96,12 +96,14 @@ function App() {
         
         <Header showTaskForm={toggleForm} showAdd={showTaskForm} />
 
-        {showTaskForm && <AddTask onAdd = {addTask} />}
+        <Route path='/' exact render = {(props)=>(
+          <>
+            {showTaskForm && <AddTask onAdd = {addTask} />}
         
-        {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
-        : 'No Task To Show '}
-
-        <Route path='/' exact />
+            {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
+            : 'No Task To Show '}
+          </>
+        )} />
         
         <Route path='/about' component='{About}' />
 
