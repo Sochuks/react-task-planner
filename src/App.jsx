@@ -91,7 +91,7 @@ function App() {
   }
 
   return (
-   
+      <Router>
       <div className="container-inner my-8 mx-auto p-8 rounded-sm border-2 border-teal-300">
         
         <Header showTaskForm={toggleForm} showAdd={showTaskForm} />
@@ -101,7 +101,10 @@ function App() {
         {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
         : 'No Task To Show '}
 
+        <Footer />
+
       </div>
+      </Router>
 
   )
 }
