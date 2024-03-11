@@ -50,6 +50,16 @@ function App() {
     const defToggle = await fetchTask(id)
     const updatedTask = {...defToggle, reminder: !defToggle.reminder}
 
+    const res = await fetch(`http://localhost:8000/tasks/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-type': 'apllication/json',
+      },
+      body: JSON.stringify(updatedTask),
+    })
+
+    const data = await res.json
+
   setTasks(tasks.map((task) => task.id === id ? {...task, reminder : !task.reminder} : task ) )
   }
 
