@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import Header from './components/Header'
 import Footer from './components/Footer'
