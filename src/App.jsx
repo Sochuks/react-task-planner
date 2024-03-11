@@ -43,10 +43,18 @@ function App() {
   }
 
     //Add Task from form
-  const addTask = (task) => {
-    const id = Math.floor(Math.random() * 10000)  + 1 
-    const newTask = {id, ...task}
-    setTasks([...tasks, newTask])
+  const addTask = async (task) => {
+    // const id = Math.floor(Math.random() * 10000)  + 1 
+    // const newTask = {id, ...task}
+    // setTasks([...tasks, newTask])
+    const res = await fetch('http://localhost:8000/tasks', {
+      method: 'POST',
+      headers: {
+        'cotent-type': 'apllication/json'
+      },
+      body: JSON.stringify(task),
+    })
+    
   }
 
     //Show Task Form
