@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import Header from './components/Header'
 import Tasks from './components/Tasks'
@@ -7,6 +7,13 @@ import AddTask from './components/AddTask'
 function App() {
   const [showTaskForm, setShowTaskForm] = useState(false);
   const [tasks, setTasks] = useState ([])
+
+  // useEffect to fetch Data from db.json
+    useEffect(() =>{
+
+        fetchTask()
+    }, [])
+
 
     // Delete task event
   const deleteTask = (id) => {
