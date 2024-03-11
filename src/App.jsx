@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import Header from './components/Header'
+import Footer from './components/Footer'
+import About from './components/About'
 import Tasks from './components/Tasks'
 import AddTask from './components/AddTask'
 
