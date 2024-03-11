@@ -5,6 +5,20 @@
             "text": "PTA meeting",
             "day": "Feb 5th at 3pm",
             "reminder": true
+          },
+
+          {
+            "id": 2,
+            "text": "Protest at alausa",
+            "day": "Oct 10th at 3pm",
+            "reminder": false
+          },
+          
+          {
+            "id": 3,
+            "text": "Lekki Toll-gate",
+            "day": "Oct 20th at 7am",
+            "reminder": true
           }
           
     ]
