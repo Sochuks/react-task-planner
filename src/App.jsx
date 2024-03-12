@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -96,16 +96,18 @@ function App() {
         
         <Header showTaskForm={toggleForm} showAdd={showTaskForm} />
 
-        <Route path='/' exact render = {(props)=>(
+          <Routes>
+          <Route path='/' element = {
           <>
             {showTaskForm && <AddTask onAdd = {addTask} />}
         
             {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
             : 'No Task To Show '}
           </>
-        )} />
+        } />
         
-        <Route path='/about' component='{About}' />
+        <Route path='/about' element={<About/>} />
+          </Routes>
 
         <Footer />
 
